@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/core-01/project-v.0.1.git/static/css/main.dd5af4db.css",
+    "main.js": "/core-01/project-v.0.1.git/static/js/main.b11a5ac9.js",
+    "index.html": "/core-01/project-v.0.1.git/index.html",
+    "main.dd5af4db.css.map": "/core-01/project-v.0.1.git/static/css/main.dd5af4db.css.map",
+    "main.b11a5ac9.js.map": "/core-01/project-v.0.1.git/static/js/main.b11a5ac9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd5af4db.css",
+    "static/js/main.b11a5ac9.js"
+  ]
+}
