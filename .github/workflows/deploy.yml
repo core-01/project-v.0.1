@@ -26,12 +26,11 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Configure Git identity
+      - name: Deploy to GitHub Pages (main branch)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: frontend
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: Deploy to GitHub Pages (main branch)
-        working-directory: frontend
-        run: npx gh-pages -b main -d build
-
+          npx gh-pages -d build -b main -r https://x-access-token:${GH_TOKEN}@github.com/core-01/project-v.0.1.git
